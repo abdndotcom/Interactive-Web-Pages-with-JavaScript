@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Web Page with JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🎉 Interactive Web Page Demo</h1>
+    <button id="themeToggle">Toggle Light/Dark Mode</button>
+  </header>
+
+  <main>
+    <!-- Part 1: Event Handling -->
+    <section id="events-demo">
+      <h2>Part 1: Event Handling</h2>
+      <button id="messageButton">Click Me!</button>
+      <p id="messageOutput"></p>
+    </section>
+
+    <!-- Part 2: Interactive Elements -->
+    <section id="interactive-demo">
+      <h2>Part 2: Interactive Elements</h2>
+
+      <!-- Counter Feature -->
+      <div class="counter">
+        <p>Count: <span id="count">0</span></p>
+        <button id="increaseBtn">Increase</button>
+        <button id="resetBtn">Reset</button>
+      </div>
+
+      <!-- Collapsible FAQ -->
+      <div class="faq">
+        <h3 class="faq-question">What is JavaScript?</h3>
+        <p class="faq-answer">JavaScript is a programming language that makes web pages interactive.</p>
+      </div>
+    </section>
+
+    <!-- Part 3: Form Validation -->
+    <section id="form-demo">
+      <h2>Part 3: Form Validation</h2>
+      <form id="signupForm">
+        <label>
+          Name:
+          <input type="text" id="name" required>
+          <small class="error" id="nameError"></small>
+        </label>
+
+        <label>
+          Email:
+          <input type="email" id="email" required>
+          <small class="error" id="emailError"></small>
+        </label>
+
+        <label>
+          Password:
+          <input type="password" id="password" required>
+          <small class="error" id="passwordError"></small>
+        </label>
+
+        <button type="submit">Sign Up</button>
+        <p id="formMessage"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
